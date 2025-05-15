@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITM Buildathon 4.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <audio id="background-music" loop>
+        <source src="./assets/music/backgroundtune.wav" type="audio/wav">
+        
+    </audio>
+    
+    
+    <button id="music-control" class="music-btn">
+        <i class="fas fa-volume-up" id="volume-icon"></i>
+    </button>
+    
+    
+    <div class="pixel-bg" style="background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmh1ZXQ4eXJiaWl4MTBnbG95MjNtOXlpcmg2aWZ4c3Z1Y2w1bXJ4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U3qYN8S0j3bpK/giphy.gif'); background-size: cover; background-position: center; opacity: 0.3;"></div>
+    
+   
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <div class="logo-text">BUILDATHON <span class="version">4.0</span></div>
+                <img src="assets/imgs/isu.png" alt="SFT Logo" class="nav-sft-logo">
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="pixel-btn">HOME</a></li>
+                <li><a href="#about" class="pixel-btn">ABOUT</a></li>
+                <li><a href="#schedule" class="pixel-btn">SCHEDULE</a></li>
+                <li><a href="#tracks" class="pixel-btn">TRACKS</a></li>
+                <li><a href="#register" class="pixel-btn glitch-btn">REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-title-container">
+                <div class="hero-title-group">
+                    <h1 class="glitch-title" data-text="BUILDATHON">BUILDATHON</h1>
+                    <h2 class="version-number">4.0</h2>
+                </div>
+                <span class="collab-x">×</span>
+                <img src="assets/imgs/sftlogo.png" alt="SFT Logo" class="collab-logo">
+               
+            </div>
+            <p class="tagline">LEVEL UP YOUR CODING SKILLS</p>
+            <div class="countdown-container">
+                <div class="countdown-timer">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <span class="countdown-label">DAYS</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <span class="countdown-label">HOURS</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <span class="countdown-label">MINS</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <span class="countdown-label">SECS</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#register" class="cta-button">JOIN THE QUEST</a>
+        </div>
+        <div class="pixel-art-decoration">
+            <div class="pixel-art-element"></div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <div class="space-background"></div>
+        <div class="section-container">
+            <h2 class="section-title">ABOUT THE HACKATHON</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to <span class="highlight">BUILDATHON 4.0</span> - ITM's flagship hackathon event! This is a 24-hour coding marathon where innovation meets creativity. Form teams, tackle real-world challenges, and build solutions that matter.</p>
+                    <p>Whether you're a coding wizard or just starting your journey, Buildathon offers the perfect platform to showcase your skills, learn from peers, and win exciting prizes!</p>
+                    <div class="event-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>May 30-31, 2025</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>ITM Campus, Kharghar</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Size: 2-4 Members</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="pixel-frame">
+                        <img src="assets/imgs/gallery-img1.JPG" alt="Hackathon Scene">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ 
+    <section id="schedule" class="schedule">
+        <div class="section-container">
+            <h2 class="section-title">EVENT SCHEDULE</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>DAY 1 - MAY 30</h3>
+                        <div class="schedule-item">
+                            <span class="time">09:00 AM</span>
+                            <span class="event">Registration & Check-in</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">10:00 AM</span>
+                            <span class="event">Opening Ceremony</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">11:00 AM</span>
+                            <span class="event">Problem Statement Release</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">12:00 PM</span>
+                            <span class="event">Hacking Begins</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">01:00 PM</span>
+                            <span class="event">Lunch Break</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">06:00 PM</span>
+                            <span class="event">Dinner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>DAY 2 - MAY 31</h3>
+                        <div class="schedule-item">
+                            <span class="time">12:00 AM</span>
+                            <span class="event">Midnight Snacks</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">08:00 AM</span>
+                            <span class="event">Breakfast</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">12:00 PM</span>
+                            <span class="event">Hacking Ends</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">01:00 PM</span>
+                            <span class="event">Presentations</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">03:00 PM</span>
+                            <span class="event">Judging & Evaluation</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">05:00 PM</span>
+                            <span class="event">Award Ceremony</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="tracks" class="tracks">
+        <div class="astro-background"></div>
+        <div class="section-container">
+            <h2 class="section-title">HACKATHON TRACKS</h2>
+            <div class="tracks-container">
+                <div class="track-card">
+                    <div class="track-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>TRACK 1: AI & MACHINE LEARNING</h3>
+                    <p>Develop innovative solutions using artificial intelligence and machine learning to solve real-world problems.</p>
+                    <ul class="track-features">
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision</li>
+                        <li>Predictive Analytics</li>
+                        <li>AI for Social Good</li>
+                    </ul>
+                </div>
+                <div class="track-card">
+                    <div class="track-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>TRACK 2: WEB & MOBILE APPS</h3>
+                    <p>Build responsive and interactive web or mobile applications that address specific needs or enhance user experiences.</p>
+                    <ul class="track-features">
+                        <li>Progressive Web Apps</li>
+                        <li>Cross-platform Mobile Apps</li>
+                        <li>UI/UX Innovation</li>
+                        <li>E-commerce Solutions</li>
+                    </ul>
+                </div>
+                <div class="track-card">
+                    <div class="track-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>TRACK 3: CYBERSECURITY</h3>
+                    <p>Create tools and solutions to enhance digital security, privacy protection, and threat identification.</p>
+                    <ul class="track-features">
+                        <li>Secure Authentication</li>
+                        <li>Vulnerability Assessment</li>
+                        <li>Encryption Tools</li>
+                        <li>Security Awareness</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="prize-pool" class="prize-pool">
+        <div class="section-container">
+            <h2 class="section-title">PRIZE POOL</h2>
+            <div class="prize-container">
+                <div class="prize-card first-prize">
+                    <div class="prize-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>1st PRIZE</h3>
+                    <div class="prize-amount">₹50,000</div>
+                    <p class="prize-desc">Cash + Exciting goodies</p>
+                </div>
+                
+                <div class="prize-card second-prize">
+                    <div class="prize-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>2nd PRIZE</h3>
+                    <div class="prize-amount">₹30,000</div>
+                    <p class="prize-desc">Cash + Exciting goodies</p>
+                </div>
+                
+                <div class="prize-card third-prize">
+                    <div class="prize-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>3rd PRIZE</h3>
+                    <div class="prize-amount">₹20,000</div>
+                    <p class="prize-desc">Cash + Exciting goodies</p>
+                </div>
+            </div>
+            
+            <div class="special-prizes">
+                <div class="special-prize-item">
+                    <div class="special-prize-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4>BEST INNOVATION</h4>
+                    <p>₹10,000</p>
+                </div>
+                
+                <div class="special-prize-item">
+                    <div class="special-prize-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>BEST UI/UX</h4>
+                    <p>₹10,000</p>
+                </div>
+                
+                <div class="special-prize-item">
+                    <div class="special-prize-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>BEST TEAM</h4>
+                    <p>₹10,000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+
+ 
+    <section id="gallery" class="gallery">
+        <div class="section-container">
+            <h2 class="section-title">IMAGE GALLERY</h2>
+            <div class="gallery-container">
+                <div class="gallery-image">
+                    <img src="assets/imgs/gallery-img1.JPG" alt="Gallery Image 1">
+                    <div class="gallery-overlay">
+                        <h3>BUILDATHON 3.0</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-image">
+                    <img src="assets/imgs/gallery-img2.JPG" alt="Gallery Image 2">
+                    <div class="gallery-overlay">
+                        <h3>WINNERS CEREMONY</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-image">
+                    <img src="assets/imgs/gallery-img3.JPG" alt="Gallery Image 3">
+                    <div class="gallery-overlay">
+                        <h3>CODING SESSION</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-image">
+                    <img src="assets/imgs/gallery-img4.JPG" alt="Gallery Image 4">
+                    <div class="gallery-overlay">
+                        <h3>TEAM COLLABORATION</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-image">
+                    <img src="assets/imgs/gallery-img5.JPG" alt="Gallery Image 5">
+                    <div class="gallery-overlay">
+                        <h3>MENTORING SESSION</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-image">
+                    <img src="assets/imgs/gallery-img6.JPG" alt="Gallery Image 6">
+                    <div class="gallery-overlay">
+                        <h3>PROJECT SHOWCASE</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-image">
+                    <img src="assets/imgs/gallery-img7.JPG" alt="Gallery Image 7">
+                    <div class="gallery-overlay">
+                        <h3>PRESENTATION</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-image">
+                    <img src="assets/imgs/ABOUT.jpg" alt="Gallery Image 8">
+                    <div class="gallery-overlay">
+                        <h3>BUILDATHON VENUE</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+
+
+    <section id="sponsors" class="sponsors">
+        <div class="section-container">
+            <h2 class="section-title">OUR SPONSORS</h2>
+            <div class="sponsors-grid">
+                <div class="sponsor-logo"><div class="pixel-logo"><img src="assets/imgs/sponsors/sponser1.png" alt="Sponsor 1"></div></div>
+                <div class="sponsor-logo"><div class="pixel-logo"><img src="assets/imgs/sponsors/sponser2.png" alt="Sponsor 2"></div></div>
+                <div class="sponsor-logo"><div class="pixel-logo"><img src="assets/imgs/sponsors/sponser3.png" alt="Sponsor 3"></div></div>
+                <div class="sponsor-logo"><div class="pixel-logo"><img src="assets/imgs/sponsors/sponser4.png" alt="Sponsor 4"></div></div>
+            </div>
+            <p class="sponsor-text">Interested in sponsoring Buildathon 4.0? <a href="#contact">Contact us</a> for details.</p>
+        </div>
+    </section>
+
+   
+    <section id="register" class="register">
+        <div class="hang-background"></div>
+        <div class="section-container">
+            <h2 class="section-title">JOIN THE HACKATHON</h2>
+            <div class="registration-container">
+                <form id="registration-form" class="pixel-form">
+                    <div class="form-group">
+                        <label for="team-name">Team Name</label>
+                        <input type="text" id="team-name" name="team-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="leader-name">Team Leader Name</label>
+                        <input type="text" id="leader-name" name="leader-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="team-size">Team Size</label>
+                        <select id="team-size" name="team-size" required>
+                            <option value="2">2 Members</option>
+                            <option value="3">3 Members</option>
+                            <option value="4">4 Members</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="track">Preferred Track</label>
+                        <select id="track" name="track" required>
+                            <option value="ai-ml">AI & Machine Learning</option>
+                            <option value="web-mobile">Web & Mobile Apps</option>
+                            <option value="cybersecurity">Cybersecurity</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Why do you want to participate?</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">SUBMIT REGISTRATION</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>BUILDATHON <span>4.0</span></h3>
+                <p>Level Up Your Coding Skills</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#tracks">Tracks</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact" id="contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> buildathon@itm.edu</p>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                <p><i class="fas fa-map-marker-alt"></i> ITM Campus, Gwalior</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 ITM Buildathon 4.0. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+            <h2>Registration Successful!</h2>
+            <p>Thank you for registering for Buildathon 4.0. We've sent a confirmation email with more details.</p>
+            <button id="modal-ok" class="modal-btn">OK</button>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

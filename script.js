@@ -1,4 +1,4 @@
-// ITM Buildathon 4.0 - Main JavaScript
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
@@ -9,17 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
     initBackgroundMusic();
 });
 
-// Background Music Control
+
 function initBackgroundMusic() {
     const music = document.getElementById('background-music');
     const musicControl = document.getElementById('music-control');
     const volumeIcon = document.getElementById('volume-icon');
     let isPlaying = false;
     
-    // Set initial volume
+    
     music.volume = 0.3;
     
-    // Music will play only after user interaction
+
     musicControl.addEventListener('click', function() {
         if (!isPlaying) {
             music.play();
